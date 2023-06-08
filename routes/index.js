@@ -12,18 +12,32 @@ router.get('/', function(req, res, next) {
 router.get('/signin', function(req, res, next) {
   res.render('signin');
 })
+router.get('/create', function(req, res, next) {
+  res.render('create');
+})
+
+router.post("/createaccount", async (req, res) => {
+  const data = {
+    Email: req.body.uemail,
+    Password:req.body.upassword
+    
+  };
+  await collects.insertMany([data]);
+
+  res.render("signin");
+});
+
 router.post("/email", async (req, res) => {
   try {
     const check = await collects.findOne({ Email: req.body.uemail });
-    if (check.Email == req.body.uemail) {
-      res.render("password");
+    if (check.Password == req.body.upassword) {
+      res.render("index");
     } else {
       res.render("errors");
     }
   } catch {
-    res.render("error");
+    res.render("er");
   }
 });
-
 
 module.exports = router;
