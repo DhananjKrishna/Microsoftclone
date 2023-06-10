@@ -11,11 +11,13 @@ router.get('/', function(req, res, next) {
 
 router.get('/signin', function(req, res, next) {
   res.render('signin');
-})
+});
 router.get('/create', function(req, res, next) {
   res.render('create');
-})
-
+});
+router.get('/team', function(req, res, next) {
+  res.render('team');
+});
 router.post("/createaccount", async (req, res) => {
   const data = {
     Email: req.body.uemail,
@@ -33,10 +35,10 @@ router.post("/email", async (req, res) => {
     if (check.Password == req.body.upassword) {
       res.render("index");
     } else {
-      res.render("errors");
+      res.write("error password");
     }
   } catch {
-    res.render("er");
+    res.write("error details");
   }
 });
 

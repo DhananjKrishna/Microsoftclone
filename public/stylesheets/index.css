@@ -57,7 +57,7 @@
    }
   .oneperson{
     color: white;
-    background-color: rgb(0, 140, 146);
+    background-color: rgb(0, 106, 255);
   }
   h2{
     font-size: 28px;
@@ -97,7 +97,7 @@
   }
   .one{
     color: white;
-    background-color: rgb(0, 140, 146);
+    background-color: rgb(0, 106, 255);
     padding: 3px;
     width: 136px;
     height: 40px;
@@ -174,7 +174,7 @@ padding-left: px;
 }
 .xboxb{
   color: white;
-  background-color: rgb(0, 140, 146);
+  background-color: rgb(0, 106, 255);
   padding: 3px;
   width: 172px;
   height: 40px;
@@ -208,7 +208,7 @@ padding-left: px;
 }
 .aa{
   font-size: 16px;
-  font-weight: 650;
+  font-weight: 650px;
   font-family:sans-serif;
   
 }

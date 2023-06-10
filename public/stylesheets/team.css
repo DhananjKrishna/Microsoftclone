@@ -1,0 +1,324 @@
+.dis {
+    background-color: rgb(0, 119, 255);
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 6px;
+    width: 100%;
+}
+
+.btn-content {
+
+    align-items: center;
+
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: 1s;
+    border-radius: 100px;
+    box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+
+
+
+.btn-content .icon-arrow {
+    transition: 0.5s;
+    margin-right: 0px;
+    transform: scale(0.6);
+}
+
+
+
+
+/* SVG */
+#arrow-icon-one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+
+
+
+.btn-content:hover #arrow-icon-one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+
+
+/* SVG animations */
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: var(--color-background);
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+.headerbuttons {
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+    font-size: 12px;
+    border: none;
+    background: none;
+    font-weight: 10;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.headerbuttons::after,
+.headerbuttons::before {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: black;
+    display: block;
+
+}
+
+.msicon {
+    height: 25px;
+    width: auto;
+    margin: 10px;
+}
+
+.headerbuttons:hover::after {
+    width: 100%;
+}
+
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.one {
+    color: white;
+    background-color: rgb(0, 106, 255);
+    padding: 3px;
+    width: 136px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.two {
+    color: rgb(0, 106, 255);
+    border: 2px rgb(0, 106, 255) solid;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card1 {
+    width: 165px;
+    height: 190px;
+    background-size: cover;
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Home-400x400?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=75&wid=400&hei=400);
+
+}
+
+.card2 {
+    width: 165px;
+    height: 190px;
+    background-size: cover;
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Business-400x400?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=75&wid=400&hei=400);
+    margin-left: 23px;
+}
+
+.card3 {
+    width: 165px;
+    height: 190px;
+    background-size: cover;
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Enterprise-400x400?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=75&wid=400&hei=400);
+    margin-left: 23px;
+}
+
+.card4 {
+    width: 165px;
+    height: 190px;
+    background-size: cover;
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Education-400x400?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=75&wid=400&hei=400);
+    margin-left: 23px;
+}
+
+.ctas {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   .ctas:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 100%;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+  
+   
+   .ctas span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+   }
+   
+  
+   
+   
+
+
+
+
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 20px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+   }
+   h2{
+    text-align: center;
+   }
+  
+   
+   .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+   }
+   
+   
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+   #button{
+    bottom: -500px;
+   }
+   #button{
+    text-align:left;
+    position: relative;
+    top: -400px;
+    right:-120px;
+  }
+  .cardimg{
+    width: 100%;
+    height: auto;
+}
+.rowcards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4%;
+    margin-top: 8%;
+}
+.carda{
+    width: 540px;
+    height: 800px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    transition: border 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: rgb(250, 250, 250) 0.2em solid;
+    margin-left: 2%;
+    text-align: left;
+   margin-right: 25px;
+   }
+   .links{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 6%;
+    width: 100%;
+    height: 60%;
+  }
+  .aa{
+    font-size: 16px;
+    font-weight: 650px;
+    font-family:sans-serif;
+    
+  }
+  footer{
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+  }
+  .bb{
+    color: #282828;
+    font-size: 11px;
+    font-family:sans-serif;
+   
+  }
+  .link{
+  padding-right: 6%;
+  }
+  .last{
+    display: flex;
+  padding-left: 6%;
+  }
+  .l{
+    width: 17px;
+    height: auto;
+  }
+  .la{
+    color: black;
+    font-size: 11px;
+    font-family:sans-serif;
+  }
+  .foot{
+    color: black;
+    font-size: 11px;
+    font-family:sans-serif;
+    padding-left: 4%;
+  }
+  .lang{
+    padding-left: 30%;
+  }
+  
+ 
